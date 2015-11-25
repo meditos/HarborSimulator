@@ -1,0 +1,2462 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY swrl "http://www.w3.org/2003/11/swrl#" >
+    <!ENTITY swrlb "http://www.w3.org/2003/11/swrlb#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY owlapi "http://www.semanticweb.org/owlapi#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<rdf:RDF xmlns="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#"
+     xml:base="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owlapi="http://www.semanticweb.org/owlapi#">
+    <owl:Ontology rdf:about="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <owl:AnnotationProperty rdf:about="&owlapi;nodeID"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#actionProperty -->
+
+    <owl:ObjectProperty rdf:about="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#actionProperty">
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#alignedTo -->
+
+    <owl:ObjectProperty rdf:about="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#alignedTo">
+        <rdfs:subPropertyOf rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#topologicalRelation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#allowedDistance -->
+
+    <owl:ObjectProperty rdf:about="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#allowedDistance">
+        <rdfs:subPropertyOf rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#staticProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#badTowing -->
+
+    <owl:ObjectProperty rdf:about="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#badTowing">
+        <rdfs:subPropertyOf rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#towing"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#closeTo -->
+
+    <owl:ObjectProperty rdf:about="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#closeTo">
+        <rdf:type rdf:resource="&owl;SymmetricProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#topologicalRelation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#closeToFacility -->
+
+    <owl:ObjectProperty rdf:about="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#closeToFacility">
+        <rdfs:subPropertyOf rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#topologicalRelation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#currentTowingBoatNumber -->
+
+    <owl:ObjectProperty rdf:about="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#currentTowingBoatNumber">
+        <rdfs:subPropertyOf rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#staticProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#delimitedBy -->
+
+    <owl:ObjectProperty rdf:about="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#delimitedBy">
+        <rdfs:subPropertyOf rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#staticProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#insideOf -->
+
+    <owl:ObjectProperty rdf:about="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#insideOf">
+        <rdfs:subPropertyOf rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#topologicalRelation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#isBadTowedBy -->
+
+    <owl:ObjectProperty rdf:about="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#isBadTowedBy">
+        <rdfs:subPropertyOf rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#isTowedBy"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#isTowedBy -->
+
+    <owl:ObjectProperty rdf:about="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#isTowedBy">
+        <rdfs:subPropertyOf rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#actionProperty"/>
+        <owl:inverseOf rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#towing"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#isWellTowedBy -->
+
+    <owl:ObjectProperty rdf:about="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#isWellTowedBy">
+        <rdfs:subPropertyOf rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#isTowedBy"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#length -->
+
+    <owl:ObjectProperty rdf:about="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#length">
+        <rdfs:subPropertyOf rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#transientProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#nonAlignedTo -->
+
+    <owl:ObjectProperty rdf:about="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#nonAlignedTo">
+        <rdfs:subPropertyOf rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#topologicalRelation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#position -->
+
+    <owl:ObjectProperty rdf:about="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#position">
+        <rdfs:subPropertyOf rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#transientProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#possibleTowingDistance -->
+
+    <owl:ObjectProperty rdf:about="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#possibleTowingDistance">
+        <rdfs:subPropertyOf rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#staticProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#recommendedTowingBoatNumber -->
+
+    <owl:ObjectProperty rdf:about="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#recommendedTowingBoatNumber">
+        <rdfs:subPropertyOf rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#staticProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#recommendedTowingDistance -->
+
+    <owl:ObjectProperty rdf:about="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#recommendedTowingDistance">
+        <rdfs:subPropertyOf rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#staticProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#speed -->
+
+    <owl:ObjectProperty rdf:about="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#speed">
+        <rdfs:subPropertyOf rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#transientProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#staticProperty -->
+
+    <owl:ObjectProperty rdf:about="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#staticProperty">
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#topologicalRelation -->
+
+    <owl:ObjectProperty rdf:about="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#topologicalRelation">
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#towing -->
+
+    <owl:ObjectProperty rdf:about="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#towing">
+        <rdfs:subPropertyOf rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#actionProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#transientProperty -->
+
+    <owl:ObjectProperty rdf:about="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#transientProperty">
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#wellTowing -->
+
+    <owl:ObjectProperty rdf:about="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#wellTowing">
+        <rdfs:subPropertyOf rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#towing"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#topObjectProperty -->
+
+    <owl:ObjectProperty rdf:about="&owl;topObjectProperty"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#ang -->
+
+    <owl:DatatypeProperty rdf:about="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#ang">
+        <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#d -->
+
+    <owl:DatatypeProperty rdf:about="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#d">
+        <rdfs:range rdf:resource="&xsd;double"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#dir -->
+
+    <owl:DatatypeProperty rdf:about="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#dir">
+        <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#id -->
+
+    <owl:DatatypeProperty rdf:about="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#id">
+        <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#lat -->
+
+    <owl:DatatypeProperty rdf:about="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#lat">
+        <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#len -->
+
+    <owl:DatatypeProperty rdf:about="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#len">
+        <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#lng -->
+
+    <owl:DatatypeProperty rdf:about="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#lng">
+        <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#mod -->
+
+    <owl:DatatypeProperty rdf:about="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#mod">
+        <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#num -->
+
+    <owl:DatatypeProperty rdf:about="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#num">
+        <rdfs:range rdf:resource="&xsd;int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#topDataProperty -->
+
+    <owl:DatatypeProperty rdf:about="&owl;topDataProperty"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#AnomalousApproachException -->
+
+    <owl:Class rdf:about="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#AnomalousApproachException"/>
+    
+
+
+    <!-- http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#AnomalousApproachViolation -->
+
+    <owl:Class rdf:about="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#AnomalousApproachViolation">
+        <rdfs:subClassOf rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#RestrictionViolation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#Area -->
+
+    <owl:Class rdf:about="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#Area">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#delimitedBy"/>
+                <owl:allValuesFrom rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#Position"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#delimitedBy"/>
+                <owl:onClass rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#Position"/>
+                <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">3</owl:minQualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#BoatNumber -->
+
+    <owl:Class rdf:about="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#BoatNumber">
+        <rdfs:subClassOf rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#Number"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#num"/>
+                <owl:someValuesFrom rdf:resource="&xsd;int"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#DangerousFacility -->
+
+    <owl:Class rdf:about="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#DangerousFacility">
+        <rdfs:subClassOf rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#Facility"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#allowedDistance"/>
+                <owl:someValuesFrom rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#Distance"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#Distance -->
+
+    <owl:Class rdf:about="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#Distance">
+        <rdfs:subClassOf rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#Property"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#d"/>
+                <owl:someValuesFrom rdf:resource="&xsd;double"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#ExpectedSituation -->
+
+    <owl:Class rdf:about="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#ExpectedSituation">
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#Facility -->
+
+    <owl:Class rdf:about="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#Facility"/>
+    
+
+
+    <!-- http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#FacilityPerimeterViolation -->
+
+    <owl:Class rdf:about="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#FacilityPerimeterViolation">
+        <rdfs:subClassOf rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#RestrictionViolation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#LargePowerDrivenVessel -->
+
+    <owl:Class rdf:about="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#LargePowerDrivenVessel">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#Vessel"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#length"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#Length"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#len"/>
+                                        <owl:someValuesFrom>
+                                            <rdfs:Datatype>
+                                                <owl:onDatatype rdf:resource="&xsd;double"/>
+                                                <owl:withRestrictions rdf:parseType="Collection">
+                                                    <rdf:Description>
+                                                        <xsd:minInclusive rdf:datatype="&xsd;double">170.0</xsd:minInclusive>
+                                                    </rdf:Description>
+                                                </owl:withRestrictions>
+                                            </rdfs:Datatype>
+                                        </owl:someValuesFrom>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#Vessel"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#recommendedTowingDistance"/>
+                <owl:someValuesFrom rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#Distance"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#currentTowingBoatNumber"/>
+                <owl:someValuesFrom rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#BoatNumber"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#recommendedTowingBoatNumber"/>
+                <owl:someValuesFrom rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#BoatNumber"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#possibleTowingDistance"/>
+                <owl:someValuesFrom rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#Distance"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#Length -->
+
+    <owl:Class rdf:about="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#Length">
+        <rdfs:subClassOf rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#Property"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#len"/>
+                <owl:someValuesFrom rdf:resource="&xsd;double"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#NavigationDirectionCompliance -->
+
+    <owl:Class rdf:about="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#NavigationDirectionCompliance">
+        <rdfs:subClassOf rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#RestrictionCompliance"/>
+    </owl:Class>
+    
+
+
+    <!-- http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#NavigationDirectionViolation -->
+
+    <owl:Class rdf:about="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#NavigationDirectionViolation">
+        <rdfs:subClassOf rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#RestrictionViolation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#Number -->
+
+    <owl:Class rdf:about="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#Number">
+        <rdfs:subClassOf rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#Property"/>
+    </owl:Class>
+    
+
+
+    <!-- http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#Position -->
+
+    <owl:Class rdf:about="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#Position">
+        <rdfs:subClassOf rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#Property"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#lng"/>
+                <owl:someValuesFrom rdf:resource="&xsd;double"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#lat"/>
+                <owl:someValuesFrom rdf:resource="&xsd;double"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#Property -->
+
+    <owl:Class rdf:about="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#Property"/>
+    
+
+
+    <!-- http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#RestrictedArea -->
+
+    <owl:Class rdf:about="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#RestrictedArea">
+        <rdfs:subClassOf rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#Area"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#dir"/>
+                <owl:someValuesFrom rdf:resource="&xsd;double"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#mod"/>
+                <owl:someValuesFrom rdf:resource="&xsd;double"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#UnrestrictedArea"/>
+    </owl:Class>
+    
+
+
+    <!-- http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#RestrictionCompliance -->
+
+    <owl:Class rdf:about="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#RestrictionCompliance">
+        <rdfs:subClassOf rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#ExpectedSituation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#RestrictionViolation -->
+
+    <owl:Class rdf:about="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#RestrictionViolation">
+        <rdfs:subClassOf rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#ExpectedSituation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#SmallBoat -->
+
+    <owl:Class rdf:about="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#SmallBoat">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#Vessel"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#length"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#Length"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#len"/>
+                                        <owl:someValuesFrom>
+                                            <rdfs:Datatype>
+                                                <owl:onDatatype rdf:resource="&xsd;double"/>
+                                                <owl:withRestrictions rdf:parseType="Collection">
+                                                    <rdf:Description>
+                                                        <xsd:maxInclusive rdf:datatype="&xsd;double">15.0</xsd:maxInclusive>
+                                                    </rdf:Description>
+                                                </owl:withRestrictions>
+                                            </rdfs:Datatype>
+                                        </owl:someValuesFrom>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#Vessel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#Speed -->
+
+    <owl:Class rdf:about="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#Speed">
+        <rdfs:subClassOf rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#Property"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#lat"/>
+                <owl:someValuesFrom rdf:resource="&xsd;double"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#mod"/>
+                <owl:someValuesFrom rdf:resource="&xsd;double"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#ang"/>
+                <owl:someValuesFrom rdf:resource="&xsd;double"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#lng"/>
+                <owl:someValuesFrom rdf:resource="&xsd;double"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#SpeedCompliance -->
+
+    <owl:Class rdf:about="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#SpeedCompliance">
+        <rdfs:subClassOf rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#RestrictionCompliance"/>
+    </owl:Class>
+    
+
+
+    <!-- http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#SpeedViolation -->
+
+    <owl:Class rdf:about="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#SpeedViolation">
+        <rdfs:subClassOf rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#RestrictionViolation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#TowingDistanceCompliance -->
+
+    <owl:Class rdf:about="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#TowingDistanceCompliance">
+        <rdfs:subClassOf rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#RestrictionCompliance"/>
+    </owl:Class>
+    
+
+
+    <!-- http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#TowingDistanceViolation -->
+
+    <owl:Class rdf:about="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#TowingDistanceViolation">
+        <rdfs:subClassOf rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#RestrictionViolation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#TowingNumberCompliance -->
+
+    <owl:Class rdf:about="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#TowingNumberCompliance">
+        <rdfs:subClassOf rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#RestrictionCompliance"/>
+    </owl:Class>
+    
+
+
+    <!-- http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#TowingNumberViolation -->
+
+    <owl:Class rdf:about="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#TowingNumberViolation">
+        <rdfs:subClassOf rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#RestrictionViolation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#UnrestrictedArea -->
+
+    <owl:Class rdf:about="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#UnrestrictedArea">
+        <rdfs:subClassOf rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#Area"/>
+    </owl:Class>
+    
+
+
+    <!-- http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#Vessel -->
+
+    <owl:Class rdf:about="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#Vessel">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#speed"/>
+                <owl:someValuesFrom rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#Speed"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#allowedDistance"/>
+                <owl:someValuesFrom rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#Distance"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#position"/>
+                <owl:allValuesFrom rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#Position"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#id"/>
+                <owl:someValuesFrom rdf:resource="&xsd;string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#length"/>
+                <owl:someValuesFrom rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#Length"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#Thing -->
+
+    <owl:Class rdf:about="&owl;Thing"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#FuelTank -->
+
+    <owl:NamedIndividual rdf:about="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#FuelTank">
+        <rdf:type rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#DangerousFacility"/>
+        <d rdf:datatype="&xsd;double">25.0</d>
+        <delimitedBy rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p73"/>
+        <delimitedBy rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p74"/>
+        <delimitedBy rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p75"/>
+        <delimitedBy rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p76"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#generalCargoChannelEast -->
+
+    <owl:NamedIndividual rdf:about="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#generalCargoChannelEast">
+        <rdf:type rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#RestrictedArea"/>
+        <dir rdf:datatype="&xsd;double">0.0</dir>
+        <mod rdf:datatype="&xsd;double">15.0</mod>
+        <delimitedBy rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p49"/>
+        <delimitedBy rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p50"/>
+        <delimitedBy rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p51"/>
+        <delimitedBy rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p52"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#generalCargoChannelToNorth -->
+
+    <owl:NamedIndividual rdf:about="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#generalCargoChannelToNorth">
+        <rdf:type rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#RestrictedArea"/>
+        <mod rdf:datatype="&xsd;double">15.0</mod>
+        <dir rdf:datatype="&xsd;double">90.0</dir>
+        <delimitedBy rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p001"/>
+        <delimitedBy rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p002"/>
+        <delimitedBy rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p003"/>
+        <delimitedBy rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p004"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#generalCargoChannelToNorth1 -->
+
+    <owl:NamedIndividual rdf:about="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#generalCargoChannelToNorth1">
+        <rdf:type rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#RestrictedArea"/>
+        <mod rdf:datatype="&xsd;double">10.0</mod>
+        <dir rdf:datatype="&xsd;double">90.0</dir>
+        <delimitedBy rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p53"/>
+        <delimitedBy rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p54"/>
+        <delimitedBy rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p55"/>
+        <delimitedBy rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p56"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#generalCargoChannelToNorth2 -->
+
+    <owl:NamedIndividual rdf:about="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#generalCargoChannelToNorth2">
+        <rdf:type rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#RestrictedArea"/>
+        <mod rdf:datatype="&xsd;double">10.0</mod>
+        <dir rdf:datatype="&xsd;double">90.0</dir>
+        <delimitedBy rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p61"/>
+        <delimitedBy rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p62"/>
+        <delimitedBy rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p63"/>
+        <delimitedBy rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p64"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#generalCargoChannelToSouth -->
+
+    <owl:NamedIndividual rdf:about="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#generalCargoChannelToSouth">
+        <rdf:type rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#RestrictedArea"/>
+        <dir rdf:datatype="&xsd;double">-90.0</dir>
+        <mod rdf:datatype="&xsd;double">15.0</mod>
+        <delimitedBy rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p005"/>
+        <delimitedBy rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p006"/>
+        <delimitedBy rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p007"/>
+        <delimitedBy rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p008"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#generalCargoChannelToSouth1 -->
+
+    <owl:NamedIndividual rdf:about="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#generalCargoChannelToSouth1">
+        <rdf:type rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#RestrictedArea"/>
+        <dir rdf:datatype="&xsd;double">-90.0</dir>
+        <mod rdf:datatype="&xsd;double">10.0</mod>
+        <delimitedBy rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p57"/>
+        <delimitedBy rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p58"/>
+        <delimitedBy rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p59"/>
+        <delimitedBy rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p60"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#generalCargoChannelToSouth2 -->
+
+    <owl:NamedIndividual rdf:about="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#generalCargoChannelToSouth2">
+        <rdf:type rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#RestrictedArea"/>
+        <dir rdf:datatype="&xsd;double">-90.0</dir>
+        <mod rdf:datatype="&xsd;double">10.0</mod>
+        <delimitedBy rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p65"/>
+        <delimitedBy rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p66"/>
+        <delimitedBy rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p67"/>
+        <delimitedBy rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p68"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#generalCargoChannelWest -->
+
+    <owl:NamedIndividual rdf:about="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#generalCargoChannelWest">
+        <rdf:type rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#RestrictedArea"/>
+        <mod rdf:datatype="&xsd;double">15.0</mod>
+        <dir rdf:datatype="&xsd;double">180.0</dir>
+        <delimitedBy rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p69"/>
+        <delimitedBy rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p70"/>
+        <delimitedBy rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p71"/>
+        <delimitedBy rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p72"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#harborShipsEastWest -->
+
+    <owl:NamedIndividual rdf:about="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#harborShipsEastWest">
+        <rdf:type rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#RestrictedArea"/>
+        <dir rdf:datatype="&xsd;double">0.0</dir>
+        <mod rdf:datatype="&xsd;double">15.0</mod>
+        <dir rdf:datatype="&xsd;double">180.0</dir>
+        <delimitedBy rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p29"/>
+        <delimitedBy rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p30"/>
+        <delimitedBy rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p31"/>
+        <delimitedBy rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p32"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#harborShipsNorthSouth1 -->
+
+    <owl:NamedIndividual rdf:about="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#harborShipsNorthSouth1">
+        <rdf:type rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#RestrictedArea"/>
+        <dir rdf:datatype="&xsd;double">-90.0</dir>
+        <mod rdf:datatype="&xsd;double">15.0</mod>
+        <dir rdf:datatype="&xsd;double">90.0</dir>
+        <delimitedBy rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p25"/>
+        <delimitedBy rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p26"/>
+        <delimitedBy rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p27"/>
+        <delimitedBy rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p28"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#harborShipsNorthSouth2 -->
+
+    <owl:NamedIndividual rdf:about="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#harborShipsNorthSouth2">
+        <rdf:type rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#RestrictedArea"/>
+        <dir rdf:datatype="&xsd;double">-90.0</dir>
+        <mod rdf:datatype="&xsd;double">15.0</mod>
+        <dir rdf:datatype="&xsd;double">90.0</dir>
+        <delimitedBy rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p33"/>
+        <delimitedBy rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p34"/>
+        <delimitedBy rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p35"/>
+        <delimitedBy rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p36"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p001 -->
+
+    <owl:NamedIndividual rdf:about="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p001">
+        <lng>400</lng>
+        <lat>50</lat>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p002 -->
+
+    <owl:NamedIndividual rdf:about="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p002">
+        <lng>425</lng>
+        <lat>50</lat>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p003 -->
+
+    <owl:NamedIndividual rdf:about="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p003">
+        <lng>425</lng>
+        <lat>480</lat>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p004 -->
+
+    <owl:NamedIndividual rdf:about="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p004">
+        <lat>480</lat>
+        <lng>400</lng>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p005 -->
+
+    <owl:NamedIndividual rdf:about="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p005">
+        <lng>435</lng>
+        <lat>35</lat>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p006 -->
+
+    <owl:NamedIndividual rdf:about="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p006">
+        <lng>460</lng>
+        <lat>35</lat>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p007 -->
+
+    <owl:NamedIndividual rdf:about="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p007">
+        <lng>460</lng>
+        <lat>480</lat>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p008 -->
+
+    <owl:NamedIndividual rdf:about="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p008">
+        <lng>435</lng>
+        <lat>480</lat>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p01 -->
+
+    <owl:NamedIndividual rdf:about="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p01">
+        <lat>255</lat>
+        <lng>460</lng>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p02 -->
+
+    <owl:NamedIndividual rdf:about="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p02">
+        <lng>460</lng>
+        <lat>280</lat>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p03 -->
+
+    <owl:NamedIndividual rdf:about="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p03">
+        <lat>280</lat>
+        <lng>250</lng>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p04 -->
+
+    <owl:NamedIndividual rdf:about="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p04">
+        <lng>250</lng>
+        <lat>255</lat>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p05 -->
+
+    <owl:NamedIndividual rdf:about="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p05">
+        <lat>245</lat>
+        <lng>460</lng>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p06 -->
+
+    <owl:NamedIndividual rdf:about="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p06">
+        <lng>460</lng>
+        <lat>220</lat>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p07 -->
+
+    <owl:NamedIndividual rdf:about="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p07">
+        <lng>250</lng>
+        <lat>220</lat>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p08 -->
+
+    <owl:NamedIndividual rdf:about="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p08">
+        <lat>245</lat>
+        <lng>250</lng>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p09 -->
+
+    <owl:NamedIndividual rdf:about="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p09">
+        <lng>460</lng>
+        <lat>180</lat>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p10 -->
+
+    <owl:NamedIndividual rdf:about="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p10">
+        <lat>205</lat>
+        <lng>460</lng>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p11 -->
+
+    <owl:NamedIndividual rdf:about="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p11">
+        <lng>250</lng>
+        <lat>205</lat>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p12 -->
+
+    <owl:NamedIndividual rdf:about="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p12">
+        <lat>180</lat>
+        <lng>250</lng>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p13 -->
+
+    <owl:NamedIndividual rdf:about="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p13">
+        <lat>170</lat>
+        <lng>460</lng>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p14 -->
+
+    <owl:NamedIndividual rdf:about="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p14">
+        <lat>145</lat>
+        <lng>460</lng>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p15 -->
+
+    <owl:NamedIndividual rdf:about="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p15">
+        <lat>145</lat>
+        <lng>250</lng>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p16 -->
+
+    <owl:NamedIndividual rdf:about="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p16">
+        <lng>250</lng>
+        <lat>170</lat>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p17 -->
+
+    <owl:NamedIndividual rdf:about="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p17">
+        <lng>460</lng>
+        <lat>105</lat>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p18 -->
+
+    <owl:NamedIndividual rdf:about="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p18">
+        <lat>130</lat>
+        <lng>460</lng>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p19 -->
+
+    <owl:NamedIndividual rdf:about="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p19">
+        <lng>250</lng>
+        <lat>130</lat>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p20 -->
+
+    <owl:NamedIndividual rdf:about="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p20">
+        <lat>105</lat>
+        <lng>250</lng>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p21 -->
+
+    <owl:NamedIndividual rdf:about="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p21">
+        <lng>460</lng>
+        <lat>95</lat>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p22 -->
+
+    <owl:NamedIndividual rdf:about="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p22">
+        <lng>460</lng>
+        <lat>70</lat>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p23 -->
+
+    <owl:NamedIndividual rdf:about="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p23">
+        <lng>250</lng>
+        <lat>70</lat>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p24 -->
+
+    <owl:NamedIndividual rdf:about="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p24">
+        <lat>95</lat>
+        <lng>250</lng>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p25 -->
+
+    <owl:NamedIndividual rdf:about="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p25">
+        <lat>460</lat>
+        <lng>300</lng>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p26 -->
+
+    <owl:NamedIndividual rdf:about="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p26">
+        <lng>350</lng>
+        <lat>460</lat>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p27 -->
+
+    <owl:NamedIndividual rdf:about="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p27">
+        <lat>300</lat>
+        <lng>350</lng>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p28 -->
+
+    <owl:NamedIndividual rdf:about="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p28">
+        <lng>300</lng>
+        <lat>300</lat>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p29 -->
+
+    <owl:NamedIndividual rdf:about="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p29">
+        <lng>300</lng>
+        <lat>300</lat>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p30 -->
+
+    <owl:NamedIndividual rdf:about="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p30">
+        <lng>300</lng>
+        <lat>350</lat>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p31 -->
+
+    <owl:NamedIndividual rdf:about="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p31">
+        <lat>350</lat>
+        <lng>550</lng>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p32 -->
+
+    <owl:NamedIndividual rdf:about="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p32">
+        <lat>300</lat>
+        <lng>550</lng>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p33 -->
+
+    <owl:NamedIndividual rdf:about="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p33">
+        <lng>500</lng>
+        <lat>350</lat>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p34 -->
+
+    <owl:NamedIndividual rdf:about="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p34">
+        <lat>350</lat>
+        <lng>550</lng>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p35 -->
+
+    <owl:NamedIndividual rdf:about="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p35">
+        <lat>20</lat>
+        <lng>550</lng>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p36 -->
+
+    <owl:NamedIndividual rdf:about="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p36">
+        <lng>500</lng>
+        <lat>20</lat>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p37 -->
+
+    <owl:NamedIndividual rdf:about="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p37">
+        <lat>20</lat>
+        <lng>570</lng>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p38 -->
+
+    <owl:NamedIndividual rdf:about="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p38">
+        <lat>20</lat>
+        <lng>620</lng>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p39 -->
+
+    <owl:NamedIndividual rdf:about="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p39">
+        <lng>620</lng>
+        <lat>220</lat>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p40 -->
+
+    <owl:NamedIndividual rdf:about="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p40">
+        <lat>220</lat>
+        <lng>570</lng>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p41 -->
+
+    <owl:NamedIndividual rdf:about="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p41">
+        <lng>570</lng>
+        <lat>220</lat>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p42 -->
+
+    <owl:NamedIndividual rdf:about="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p42">
+        <lng>570</lng>
+        <lat>170</lat>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p43 -->
+
+    <owl:NamedIndividual rdf:about="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p43">
+        <lat>170</lat>
+        <lng>720</lng>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p44 -->
+
+    <owl:NamedIndividual rdf:about="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p44">
+        <lat>220</lat>
+        <lng>720</lng>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p45 -->
+
+    <owl:NamedIndividual rdf:about="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p45">
+        <lat>170</lat>
+        <lng>720</lng>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p46 -->
+
+    <owl:NamedIndividual rdf:about="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p46">
+        <lng>670</lng>
+        <lat>170</lat>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p47 -->
+
+    <owl:NamedIndividual rdf:about="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p47">
+        <lat>460</lat>
+        <lng>670</lng>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p48 -->
+
+    <owl:NamedIndividual rdf:about="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p48">
+        <lat>460</lat>
+        <lng>720</lng>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p49 -->
+
+    <owl:NamedIndividual rdf:about="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p49">
+        <lng>400</lng>
+        <lat>370</lat>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p50 -->
+
+    <owl:NamedIndividual rdf:about="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p50">
+        <lat>395</lat>
+        <lng>400</lng>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p51 -->
+
+    <owl:NamedIndividual rdf:about="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p51">
+        <lat>395</lat>
+        <lng>610</lng>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p52 -->
+
+    <owl:NamedIndividual rdf:about="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p52">
+        <lat>370</lat>
+        <lng>610</lng>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p53 -->
+
+    <owl:NamedIndividual rdf:about="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p53">
+        <lng>475</lng>
+        <lat>370</lat>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p54 -->
+
+    <owl:NamedIndividual rdf:about="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p54">
+        <lat>370</lat>
+        <lng>500</lng>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p55 -->
+
+    <owl:NamedIndividual rdf:about="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p55">
+        <lng>500</lng>
+        <lat>480</lat>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p56 -->
+
+    <owl:NamedIndividual rdf:about="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p56">
+        <lat>480</lat>
+        <lng>475</lng>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p57 -->
+
+    <owl:NamedIndividual rdf:about="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p57">
+        <lat>370</lat>
+        <lng>510</lng>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p58 -->
+
+    <owl:NamedIndividual rdf:about="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p58">
+        <lng>535</lng>
+        <lat>370</lat>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p59 -->
+
+    <owl:NamedIndividual rdf:about="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p59">
+        <lat>480</lat>
+        <lng>535</lng>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p60 -->
+
+    <owl:NamedIndividual rdf:about="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p60">
+        <lat>480</lat>
+        <lng>510</lng>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p61 -->
+
+    <owl:NamedIndividual rdf:about="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p61">
+        <lng>550</lng>
+        <lat>370</lat>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p62 -->
+
+    <owl:NamedIndividual rdf:about="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p62">
+        <lng>575</lng>
+        <lat>370</lat>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p63 -->
+
+    <owl:NamedIndividual rdf:about="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p63">
+        <lat>480</lat>
+        <lng>575</lng>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p64 -->
+
+    <owl:NamedIndividual rdf:about="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p64">
+        <lng>550</lng>
+        <lat>480</lat>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p65 -->
+
+    <owl:NamedIndividual rdf:about="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p65">
+        <lat>370</lat>
+        <lng>585</lng>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p66 -->
+
+    <owl:NamedIndividual rdf:about="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p66">
+        <lng>610</lng>
+        <lat>370</lat>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p67 -->
+
+    <owl:NamedIndividual rdf:about="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p67">
+        <lat>480</lat>
+        <lng>610</lng>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p68 -->
+
+    <owl:NamedIndividual rdf:about="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p68">
+        <lng>585</lng>
+        <lat>480</lat>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p69 -->
+
+    <owl:NamedIndividual rdf:about="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p69">
+        <lat>435</lat>
+        <lng>400</lng>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p70 -->
+
+    <owl:NamedIndividual rdf:about="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p70">
+        <lng>400</lng>
+        <lat>410</lat>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p71 -->
+
+    <owl:NamedIndividual rdf:about="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p71">
+        <lng>610</lng>
+        <lat>410</lat>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p72 -->
+
+    <owl:NamedIndividual rdf:about="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p72">
+        <lng>610</lng>
+        <lat>435</lat>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p73 -->
+
+    <owl:NamedIndividual rdf:about="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p73">
+        <lat>240</lat>
+        <lng>200</lng>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p74 -->
+
+    <owl:NamedIndividual rdf:about="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p74">
+        <lat>225</lat>
+        <lng>200</lng>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p75 -->
+
+    <owl:NamedIndividual rdf:about="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p75">
+        <lng>250</lng>
+        <lat>225</lat>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p76 -->
+
+    <owl:NamedIndividual rdf:about="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p76">
+        <lat>240</lat>
+        <lng>250</lng>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#smallBoatsEastWest -->
+
+    <owl:NamedIndividual rdf:about="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#smallBoatsEastWest">
+        <rdf:type rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#RestrictedArea"/>
+        <dir rdf:datatype="&xsd;double">0.0</dir>
+        <mod rdf:datatype="&xsd;double">15.0</mod>
+        <dir rdf:datatype="&xsd;double">180.0</dir>
+        <delimitedBy rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p41"/>
+        <delimitedBy rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p42"/>
+        <delimitedBy rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p43"/>
+        <delimitedBy rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p44"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#smallBoatsNorthSouth1 -->
+
+    <owl:NamedIndividual rdf:about="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#smallBoatsNorthSouth1">
+        <rdf:type rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#RestrictedArea"/>
+        <dir rdf:datatype="&xsd;double">-90.0</dir>
+        <mod rdf:datatype="&xsd;double">15.0</mod>
+        <dir rdf:datatype="&xsd;double">90.0</dir>
+        <delimitedBy rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p37"/>
+        <delimitedBy rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p38"/>
+        <delimitedBy rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p39"/>
+        <delimitedBy rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p40"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#smallBoatsNorthSouth2 -->
+
+    <owl:NamedIndividual rdf:about="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#smallBoatsNorthSouth2">
+        <rdf:type rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#RestrictedArea"/>
+        <dir rdf:datatype="&xsd;double">-90.0</dir>
+        <mod rdf:datatype="&xsd;double">15.0</mod>
+        <dir rdf:datatype="&xsd;double">90.0</dir>
+        <delimitedBy rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p45"/>
+        <delimitedBy rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p46"/>
+        <delimitedBy rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p47"/>
+        <delimitedBy rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p48"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#specialContainerChannelToEast1 -->
+
+    <owl:NamedIndividual rdf:about="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#specialContainerChannelToEast1">
+        <rdf:type rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#RestrictedArea"/>
+        <dir rdf:datatype="&xsd;double">0.0</dir>
+        <mod rdf:datatype="&xsd;double">10.0</mod>
+        <delimitedBy rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p05"/>
+        <delimitedBy rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p06"/>
+        <delimitedBy rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p07"/>
+        <delimitedBy rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p08"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#specialContainerChannelToEast2 -->
+
+    <owl:NamedIndividual rdf:about="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#specialContainerChannelToEast2">
+        <rdf:type rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#RestrictedArea"/>
+        <dir rdf:datatype="&xsd;double">0.0</dir>
+        <mod rdf:datatype="&xsd;double">10.0</mod>
+        <delimitedBy rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p13"/>
+        <delimitedBy rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p14"/>
+        <delimitedBy rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p15"/>
+        <delimitedBy rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p16"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#specialContainerChannelToEast3 -->
+
+    <owl:NamedIndividual rdf:about="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#specialContainerChannelToEast3">
+        <rdf:type rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#RestrictedArea"/>
+        <dir rdf:datatype="&xsd;double">0.0</dir>
+        <mod rdf:datatype="&xsd;double">10.0</mod>
+        <delimitedBy rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p21"/>
+        <delimitedBy rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p22"/>
+        <delimitedBy rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p23"/>
+        <delimitedBy rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p24"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#specialContainerChannelToWest1 -->
+
+    <owl:NamedIndividual rdf:about="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#specialContainerChannelToWest1">
+        <rdf:type rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#RestrictedArea"/>
+        <mod rdf:datatype="&xsd;double">10.0</mod>
+        <dir rdf:datatype="&xsd;double">180.0</dir>
+        <delimitedBy rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p01"/>
+        <delimitedBy rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p02"/>
+        <delimitedBy rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p03"/>
+        <delimitedBy rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p04"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#specialContainerChannelToWest2 -->
+
+    <owl:NamedIndividual rdf:about="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#specialContainerChannelToWest2">
+        <rdf:type rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#RestrictedArea"/>
+        <mod rdf:datatype="&xsd;double">10.0</mod>
+        <dir rdf:datatype="&xsd;double">180.0</dir>
+        <delimitedBy rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p09"/>
+        <delimitedBy rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p10"/>
+        <delimitedBy rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p11"/>
+        <delimitedBy rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p12"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#specialContainerChannelToWest3 -->
+
+    <owl:NamedIndividual rdf:about="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#specialContainerChannelToWest3">
+        <rdf:type rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#RestrictedArea"/>
+        <mod rdf:datatype="&xsd;double">10.0</mod>
+        <dir rdf:datatype="&xsd;double">180.0</dir>
+        <delimitedBy rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p17"/>
+        <delimitedBy rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p18"/>
+        <delimitedBy rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p19"/>
+        <delimitedBy rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#p20"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Rules
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <swrl:Variable rdf:about="urn:swrl#x"/>
+    <swrl:Variable rdf:about="urn:swrl#z"/>
+    <swrl:Variable rdf:about="urn:swrl#y"/>
+    <swrl:Variable rdf:about="urn:swrl#a"/>
+    <swrl:Variable rdf:about="urn:swrl#b"/>
+    <swrl:Variable rdf:about="urn:swrl#s"/>
+    <swrl:Variable rdf:about="urn:swrl#va"/>
+    <swrl:Variable rdf:about="urn:swrl#vs"/>
+    <swrl:Variable rdf:about="urn:swrl#f"/>
+    <swrl:Imp>
+        <swrl:head>
+            <swrl:AtomList>
+                <rdf:rest rdf:resource="&rdf;nil"/>
+                <rdf:first>
+                    <swrl:ClassAtom>
+                        <swrl:classPredicate rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#TowingNumberViolation"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                    </swrl:ClassAtom>
+                </rdf:first>
+            </swrl:AtomList>
+        </swrl:head>
+        <swrl:body>
+            <swrl:AtomList>
+                <rdf:rest>
+                    <swrl:AtomList>
+                        <rdf:first>
+                            <swrl:IndividualPropertyAtom>
+                                <swrl:propertyPredicate rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#currentTowingBoatNumber"/>
+                                <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                                <swrl:argument2 rdf:resource="urn:swrl#z"/>
+                            </swrl:IndividualPropertyAtom>
+                        </rdf:first>
+                        <rdf:rest>
+                            <swrl:AtomList>
+                                <rdf:first>
+                                    <swrl:IndividualPropertyAtom>
+                                        <swrl:propertyPredicate rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#recommendedTowingBoatNumber"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                                        <swrl:argument2 rdf:resource="urn:swrl#y"/>
+                                    </swrl:IndividualPropertyAtom>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <swrl:AtomList>
+                                        <rdf:first>
+                                            <swrl:DatavaluedPropertyAtom>
+                                                <swrl:propertyPredicate rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#num"/>
+                                                <swrl:argument2 rdf:resource="urn:swrl#a"/>
+                                                <swrl:argument1 rdf:resource="urn:swrl#y"/>
+                                            </swrl:DatavaluedPropertyAtom>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <swrl:AtomList>
+                                                <rdf:first>
+                                                    <swrl:DatavaluedPropertyAtom>
+                                                        <swrl:propertyPredicate rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#num"/>
+                                                        <swrl:argument2 rdf:resource="urn:swrl#b"/>
+                                                        <swrl:argument1 rdf:resource="urn:swrl#z"/>
+                                                    </swrl:DatavaluedPropertyAtom>
+                                                </rdf:first>
+                                                <rdf:rest>
+                                                    <swrl:AtomList>
+                                                        <rdf:rest rdf:resource="&rdf;nil"/>
+                                                        <rdf:first>
+                                                            <swrl:BuiltinAtom>
+                                                                <swrl:builtin rdf:resource="&swrlb;notEqual"/>
+                                                                <swrl:arguments rdf:parseType="Collection">
+                                                                    <rdf:Description rdf:about="urn:swrl#a"/>
+                                                                    <rdf:Description rdf:about="urn:swrl#b"/>
+                                                                </swrl:arguments>
+                                                            </swrl:BuiltinAtom>
+                                                        </rdf:first>
+                                                    </swrl:AtomList>
+                                                </rdf:rest>
+                                            </swrl:AtomList>
+                                        </rdf:rest>
+                                    </swrl:AtomList>
+                                </rdf:rest>
+                            </swrl:AtomList>
+                        </rdf:rest>
+                    </swrl:AtomList>
+                </rdf:rest>
+                <rdf:first>
+                    <swrl:ClassAtom>
+                        <swrl:classPredicate rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#LargePowerDrivenVessel"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                    </swrl:ClassAtom>
+                </rdf:first>
+            </swrl:AtomList>
+        </swrl:body>
+    </swrl:Imp>
+    <swrl:Imp>
+        <swrl:head>
+            <swrl:AtomList>
+                <rdf:rest rdf:resource="&rdf;nil"/>
+                <rdf:first>
+                    <swrl:ClassAtom>
+                        <swrl:classPredicate rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#TowingDistanceCompliance"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#y"/>
+                    </swrl:ClassAtom>
+                </rdf:first>
+            </swrl:AtomList>
+        </swrl:head>
+        <swrl:body>
+            <swrl:AtomList>
+                <rdf:first>
+                    <swrl:ClassAtom>
+                        <swrl:classPredicate rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#LargePowerDrivenVessel"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                    </swrl:ClassAtom>
+                </rdf:first>
+                <rdf:rest>
+                    <swrl:AtomList>
+                        <rdf:first>
+                            <swrl:ClassAtom>
+                                <swrl:classPredicate rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#SmallBoat"/>
+                                <swrl:argument1 rdf:resource="urn:swrl#y"/>
+                            </swrl:ClassAtom>
+                        </rdf:first>
+                        <rdf:rest>
+                            <swrl:AtomList>
+                                <rdf:rest rdf:resource="&rdf;nil"/>
+                                <rdf:first>
+                                    <swrl:IndividualPropertyAtom>
+                                        <swrl:propertyPredicate rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#isWellTowedBy"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                                        <swrl:argument2 rdf:resource="urn:swrl#y"/>
+                                    </swrl:IndividualPropertyAtom>
+                                </rdf:first>
+                            </swrl:AtomList>
+                        </rdf:rest>
+                    </swrl:AtomList>
+                </rdf:rest>
+            </swrl:AtomList>
+        </swrl:body>
+    </swrl:Imp>
+    <swrl:Imp>
+        <swrl:head>
+            <swrl:AtomList>
+                <rdf:rest rdf:resource="&rdf;nil"/>
+                <rdf:first>
+                    <swrl:ClassAtom>
+                        <swrl:classPredicate rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#TowingNumberCompliance"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                    </swrl:ClassAtom>
+                </rdf:first>
+            </swrl:AtomList>
+        </swrl:head>
+        <swrl:body>
+            <swrl:AtomList>
+                <rdf:first>
+                    <swrl:ClassAtom>
+                        <swrl:classPredicate rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#LargePowerDrivenVessel"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                    </swrl:ClassAtom>
+                </rdf:first>
+                <rdf:rest>
+                    <swrl:AtomList>
+                        <rdf:rest>
+                            <swrl:AtomList>
+                                <rdf:first>
+                                    <swrl:IndividualPropertyAtom>
+                                        <swrl:propertyPredicate rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#recommendedTowingBoatNumber"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                                        <swrl:argument2 rdf:resource="urn:swrl#y"/>
+                                    </swrl:IndividualPropertyAtom>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <swrl:AtomList>
+                                        <rdf:rest>
+                                            <swrl:AtomList>
+                                                <rdf:rest>
+                                                    <swrl:AtomList>
+                                                        <rdf:rest rdf:resource="&rdf;nil"/>
+                                                        <rdf:first>
+                                                            <swrl:BuiltinAtom>
+                                                                <swrl:builtin rdf:resource="&swrlb;equal"/>
+                                                                <swrl:arguments rdf:parseType="Collection">
+                                                                    <rdf:Description rdf:about="urn:swrl#a"/>
+                                                                    <rdf:Description rdf:about="urn:swrl#b"/>
+                                                                </swrl:arguments>
+                                                            </swrl:BuiltinAtom>
+                                                        </rdf:first>
+                                                    </swrl:AtomList>
+                                                </rdf:rest>
+                                                <rdf:first>
+                                                    <swrl:DatavaluedPropertyAtom>
+                                                        <swrl:propertyPredicate rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#num"/>
+                                                        <swrl:argument2 rdf:resource="urn:swrl#b"/>
+                                                        <swrl:argument1 rdf:resource="urn:swrl#z"/>
+                                                    </swrl:DatavaluedPropertyAtom>
+                                                </rdf:first>
+                                            </swrl:AtomList>
+                                        </rdf:rest>
+                                        <rdf:first>
+                                            <swrl:DatavaluedPropertyAtom>
+                                                <swrl:propertyPredicate rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#num"/>
+                                                <swrl:argument2 rdf:resource="urn:swrl#a"/>
+                                                <swrl:argument1 rdf:resource="urn:swrl#y"/>
+                                            </swrl:DatavaluedPropertyAtom>
+                                        </rdf:first>
+                                    </swrl:AtomList>
+                                </rdf:rest>
+                            </swrl:AtomList>
+                        </rdf:rest>
+                        <rdf:first>
+                            <swrl:IndividualPropertyAtom>
+                                <swrl:propertyPredicate rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#currentTowingBoatNumber"/>
+                                <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                                <swrl:argument2 rdf:resource="urn:swrl#z"/>
+                            </swrl:IndividualPropertyAtom>
+                        </rdf:first>
+                    </swrl:AtomList>
+                </rdf:rest>
+            </swrl:AtomList>
+        </swrl:body>
+    </swrl:Imp>
+    <swrl:Imp>
+        <swrl:body>
+            <swrl:AtomList>
+                <rdf:rest>
+                    <swrl:AtomList>
+                        <rdf:rest>
+                            <swrl:AtomList>
+                                <rdf:rest rdf:resource="&rdf;nil"/>
+                                <rdf:first>
+                                    <swrl:IndividualPropertyAtom>
+                                        <swrl:propertyPredicate rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#isBadTowedBy"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                                        <swrl:argument2 rdf:resource="urn:swrl#y"/>
+                                    </swrl:IndividualPropertyAtom>
+                                </rdf:first>
+                            </swrl:AtomList>
+                        </rdf:rest>
+                        <rdf:first>
+                            <swrl:ClassAtom>
+                                <swrl:classPredicate rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#SmallBoat"/>
+                                <swrl:argument1 rdf:resource="urn:swrl#y"/>
+                            </swrl:ClassAtom>
+                        </rdf:first>
+                    </swrl:AtomList>
+                </rdf:rest>
+                <rdf:first>
+                    <swrl:ClassAtom>
+                        <swrl:classPredicate rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#LargePowerDrivenVessel"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                    </swrl:ClassAtom>
+                </rdf:first>
+            </swrl:AtomList>
+        </swrl:body>
+        <swrl:head>
+            <swrl:AtomList>
+                <rdf:first>
+                    <swrl:ClassAtom>
+                        <swrl:classPredicate rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#TowingDistanceViolation"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                    </swrl:ClassAtom>
+                </rdf:first>
+                <rdf:rest>
+                    <swrl:AtomList>
+                        <rdf:rest rdf:resource="&rdf;nil"/>
+                        <rdf:first>
+                            <swrl:ClassAtom>
+                                <swrl:classPredicate rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#TowingDistanceViolation"/>
+                                <swrl:argument1 rdf:resource="urn:swrl#y"/>
+                            </swrl:ClassAtom>
+                        </rdf:first>
+                    </swrl:AtomList>
+                </rdf:rest>
+            </swrl:AtomList>
+        </swrl:head>
+    </swrl:Imp>
+    <swrl:Imp>
+        <swrl:body>
+            <swrl:AtomList>
+                <rdf:rest>
+                    <swrl:AtomList>
+                        <rdf:rest>
+                            <swrl:AtomList>
+                                <rdf:rest rdf:resource="&rdf;nil"/>
+                                <rdf:first>
+                                    <swrl:IndividualPropertyAtom>
+                                        <swrl:propertyPredicate rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#closeToFacility"/>
+                                        <swrl:argument2 rdf:resource="urn:swrl#f"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                                    </swrl:IndividualPropertyAtom>
+                                </rdf:first>
+                            </swrl:AtomList>
+                        </rdf:rest>
+                        <rdf:first>
+                            <swrl:ClassAtom>
+                                <swrl:classPredicate rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#Vessel"/>
+                                <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                            </swrl:ClassAtom>
+                        </rdf:first>
+                    </swrl:AtomList>
+                </rdf:rest>
+                <rdf:first>
+                    <swrl:ClassAtom>
+                        <swrl:classPredicate rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#DangerousFacility"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#f"/>
+                    </swrl:ClassAtom>
+                </rdf:first>
+            </swrl:AtomList>
+        </swrl:body>
+        <swrl:head>
+            <swrl:AtomList>
+                <rdf:rest rdf:resource="&rdf;nil"/>
+                <rdf:first>
+                    <swrl:ClassAtom>
+                        <swrl:classPredicate rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#FacilityPerimeterViolation"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                    </swrl:ClassAtom>
+                </rdf:first>
+            </swrl:AtomList>
+        </swrl:head>
+    </swrl:Imp>
+    <swrl:Imp>
+        <swrl:head>
+            <swrl:AtomList>
+                <rdf:rest rdf:resource="&rdf;nil"/>
+                <rdf:first>
+                    <swrl:ClassAtom>
+                        <swrl:classPredicate rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#NavigationDirectionViolation"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                    </swrl:ClassAtom>
+                </rdf:first>
+            </swrl:AtomList>
+        </swrl:head>
+        <swrl:body>
+            <swrl:AtomList>
+                <rdf:rest>
+                    <swrl:AtomList>
+                        <rdf:first>
+                            <swrl:IndividualPropertyAtom>
+                                <swrl:propertyPredicate rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#insideOf"/>
+                                <swrl:argument2 rdf:resource="urn:swrl#a"/>
+                                <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                            </swrl:IndividualPropertyAtom>
+                        </rdf:first>
+                        <rdf:rest>
+                            <swrl:AtomList>
+                                <rdf:rest rdf:resource="&rdf;nil"/>
+                                <rdf:first>
+                                    <swrl:IndividualPropertyAtom>
+                                        <swrl:propertyPredicate rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#nonAlignedTo"/>
+                                        <swrl:argument2 rdf:resource="urn:swrl#a"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                                    </swrl:IndividualPropertyAtom>
+                                </rdf:first>
+                            </swrl:AtomList>
+                        </rdf:rest>
+                    </swrl:AtomList>
+                </rdf:rest>
+                <rdf:first>
+                    <swrl:ClassAtom>
+                        <swrl:classPredicate rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#Vessel"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                    </swrl:ClassAtom>
+                </rdf:first>
+            </swrl:AtomList>
+        </swrl:body>
+    </swrl:Imp>
+    <swrl:Imp>
+        <swrl:head>
+            <swrl:AtomList>
+                <rdf:rest rdf:resource="&rdf;nil"/>
+                <rdf:first>
+                    <swrl:ClassAtom>
+                        <swrl:classPredicate rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#SpeedCompliance"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                    </swrl:ClassAtom>
+                </rdf:first>
+            </swrl:AtomList>
+        </swrl:head>
+        <swrl:body>
+            <swrl:AtomList>
+                <rdf:first>
+                    <swrl:ClassAtom>
+                        <swrl:classPredicate rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#Area"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#a"/>
+                    </swrl:ClassAtom>
+                </rdf:first>
+                <rdf:rest>
+                    <swrl:AtomList>
+                        <rdf:first>
+                            <swrl:ClassAtom>
+                                <swrl:classPredicate rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#Vessel"/>
+                                <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                            </swrl:ClassAtom>
+                        </rdf:first>
+                        <rdf:rest>
+                            <swrl:AtomList>
+                                <rdf:first>
+                                    <swrl:IndividualPropertyAtom>
+                                        <swrl:propertyPredicate rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#insideOf"/>
+                                        <swrl:argument2 rdf:resource="urn:swrl#a"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                                    </swrl:IndividualPropertyAtom>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <swrl:AtomList>
+                                        <rdf:first>
+                                            <swrl:IndividualPropertyAtom>
+                                                <swrl:propertyPredicate rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#speed"/>
+                                                <swrl:argument2 rdf:resource="urn:swrl#s"/>
+                                                <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                                            </swrl:IndividualPropertyAtom>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <swrl:AtomList>
+                                                <rdf:first>
+                                                    <swrl:DatavaluedPropertyAtom>
+                                                        <swrl:propertyPredicate rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#mod"/>
+                                                        <swrl:argument1 rdf:resource="urn:swrl#a"/>
+                                                        <swrl:argument2 rdf:resource="urn:swrl#va"/>
+                                                    </swrl:DatavaluedPropertyAtom>
+                                                </rdf:first>
+                                                <rdf:rest>
+                                                    <swrl:AtomList>
+                                                        <rdf:rest>
+                                                            <swrl:AtomList>
+                                                                <rdf:rest rdf:resource="&rdf;nil"/>
+                                                                <rdf:first>
+                                                                    <swrl:BuiltinAtom>
+                                                                        <swrl:builtin rdf:resource="&swrlb;lessThan"/>
+                                                                        <swrl:arguments rdf:parseType="Collection">
+                                                                            <rdf:Description rdf:about="urn:swrl#vs"/>
+                                                                            <rdf:Description rdf:about="urn:swrl#va"/>
+                                                                        </swrl:arguments>
+                                                                    </swrl:BuiltinAtom>
+                                                                </rdf:first>
+                                                            </swrl:AtomList>
+                                                        </rdf:rest>
+                                                        <rdf:first>
+                                                            <swrl:DatavaluedPropertyAtom>
+                                                                <swrl:propertyPredicate rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#mod"/>
+                                                                <swrl:argument1 rdf:resource="urn:swrl#s"/>
+                                                                <swrl:argument2 rdf:resource="urn:swrl#vs"/>
+                                                            </swrl:DatavaluedPropertyAtom>
+                                                        </rdf:first>
+                                                    </swrl:AtomList>
+                                                </rdf:rest>
+                                            </swrl:AtomList>
+                                        </rdf:rest>
+                                    </swrl:AtomList>
+                                </rdf:rest>
+                            </swrl:AtomList>
+                        </rdf:rest>
+                    </swrl:AtomList>
+                </rdf:rest>
+            </swrl:AtomList>
+        </swrl:body>
+    </swrl:Imp>
+    <swrl:Imp>
+        <swrl:body>
+            <swrl:AtomList>
+                <rdf:first>
+                    <swrl:ClassAtom>
+                        <swrl:classPredicate rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#Vessel"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                    </swrl:ClassAtom>
+                </rdf:first>
+                <rdf:rest>
+                    <swrl:AtomList>
+                        <rdf:first>
+                            <swrl:IndividualPropertyAtom>
+                                <swrl:propertyPredicate rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#alignedTo"/>
+                                <swrl:argument2 rdf:resource="urn:swrl#a"/>
+                                <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                            </swrl:IndividualPropertyAtom>
+                        </rdf:first>
+                        <rdf:rest>
+                            <swrl:AtomList>
+                                <rdf:rest rdf:resource="&rdf;nil"/>
+                                <rdf:first>
+                                    <swrl:IndividualPropertyAtom>
+                                        <swrl:propertyPredicate rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#insideOf"/>
+                                        <swrl:argument2 rdf:resource="urn:swrl#a"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                                    </swrl:IndividualPropertyAtom>
+                                </rdf:first>
+                            </swrl:AtomList>
+                        </rdf:rest>
+                    </swrl:AtomList>
+                </rdf:rest>
+            </swrl:AtomList>
+        </swrl:body>
+        <swrl:head>
+            <swrl:AtomList>
+                <rdf:rest rdf:resource="&rdf;nil"/>
+                <rdf:first>
+                    <swrl:ClassAtom>
+                        <swrl:classPredicate rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#NavigationDirectionCompliance"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                    </swrl:ClassAtom>
+                </rdf:first>
+            </swrl:AtomList>
+        </swrl:head>
+    </swrl:Imp>
+    <swrl:Imp>
+        <swrl:head>
+            <swrl:AtomList>
+                <rdf:rest rdf:resource="&rdf;nil"/>
+                <rdf:first>
+                    <swrl:ClassAtom>
+                        <swrl:classPredicate rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#SpeedViolation"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                    </swrl:ClassAtom>
+                </rdf:first>
+            </swrl:AtomList>
+        </swrl:head>
+        <swrl:body>
+            <swrl:AtomList>
+                <rdf:rest>
+                    <swrl:AtomList>
+                        <rdf:rest>
+                            <swrl:AtomList>
+                                <rdf:rest>
+                                    <swrl:AtomList>
+                                        <rdf:rest>
+                                            <swrl:AtomList>
+                                                <rdf:first>
+                                                    <swrl:DatavaluedPropertyAtom>
+                                                        <swrl:propertyPredicate rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#mod"/>
+                                                        <swrl:argument1 rdf:resource="urn:swrl#a"/>
+                                                        <swrl:argument2 rdf:resource="urn:swrl#va"/>
+                                                    </swrl:DatavaluedPropertyAtom>
+                                                </rdf:first>
+                                                <rdf:rest>
+                                                    <swrl:AtomList>
+                                                        <rdf:rest>
+                                                            <swrl:AtomList>
+                                                                <rdf:rest rdf:resource="&rdf;nil"/>
+                                                                <rdf:first>
+                                                                    <swrl:BuiltinAtom>
+                                                                        <swrl:builtin rdf:resource="&swrlb;greaterThan"/>
+                                                                        <swrl:arguments rdf:parseType="Collection">
+                                                                            <rdf:Description rdf:about="urn:swrl#vs"/>
+                                                                            <rdf:Description rdf:about="urn:swrl#va"/>
+                                                                        </swrl:arguments>
+                                                                    </swrl:BuiltinAtom>
+                                                                </rdf:first>
+                                                            </swrl:AtomList>
+                                                        </rdf:rest>
+                                                        <rdf:first>
+                                                            <swrl:DatavaluedPropertyAtom>
+                                                                <swrl:propertyPredicate rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#mod"/>
+                                                                <swrl:argument1 rdf:resource="urn:swrl#s"/>
+                                                                <swrl:argument2 rdf:resource="urn:swrl#vs"/>
+                                                            </swrl:DatavaluedPropertyAtom>
+                                                        </rdf:first>
+                                                    </swrl:AtomList>
+                                                </rdf:rest>
+                                            </swrl:AtomList>
+                                        </rdf:rest>
+                                        <rdf:first>
+                                            <swrl:IndividualPropertyAtom>
+                                                <swrl:propertyPredicate rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#speed"/>
+                                                <swrl:argument2 rdf:resource="urn:swrl#s"/>
+                                                <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                                            </swrl:IndividualPropertyAtom>
+                                        </rdf:first>
+                                    </swrl:AtomList>
+                                </rdf:rest>
+                                <rdf:first>
+                                    <swrl:IndividualPropertyAtom>
+                                        <swrl:propertyPredicate rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#insideOf"/>
+                                        <swrl:argument2 rdf:resource="urn:swrl#a"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                                    </swrl:IndividualPropertyAtom>
+                                </rdf:first>
+                            </swrl:AtomList>
+                        </rdf:rest>
+                        <rdf:first>
+                            <swrl:ClassAtom>
+                                <swrl:classPredicate rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#Vessel"/>
+                                <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                            </swrl:ClassAtom>
+                        </rdf:first>
+                    </swrl:AtomList>
+                </rdf:rest>
+                <rdf:first>
+                    <swrl:ClassAtom>
+                        <swrl:classPredicate rdf:resource="http://giaa.inf.uc3m.es/harbor/hs/harbor.owl#Area"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#a"/>
+                    </swrl:ClassAtom>
+                </rdf:first>
+            </swrl:AtomList>
+        </swrl:body>
+    </swrl:Imp>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.2.3.1824) http://owlapi.sourceforge.net -->
+
